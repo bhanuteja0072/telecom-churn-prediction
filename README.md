@@ -54,11 +54,13 @@ A custom `Model_Ensemble` function handles training, cross-validation, and thres
 
 ## 📊 Key Results
 
-| Metric | XGBoost (th=0.70) | Random Forest (th=0.36) |
-|---|---|---|
-| **Accuracy** | Higher | Moderate |
-| **Recall** | Lower | **Highest** |
-| **AUC-ROC** | Competitive | Competitive |
+| Metric          | XGBoost (th=0.70) | Random Forest (th=0.36) |
+| --------------- | ----------------- | ----------------------- |
+| **Accuracy**    | 92.98%            | 86.77%                  |
+| **Recall**      | 52.51%            | **83.48%**              |
+| **Precision**   | 69.42%            | 41.74%                  |
+| **Specificity** | 97.45%            | 87.14%                  |
+| **AUC-ROC**     | 0.861             | **0.922**               |
 
 The Random Forest model at threshold 0.36 gives the best balance across all metrics and is used for the final business submission.
 
